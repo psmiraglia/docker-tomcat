@@ -31,6 +31,7 @@ RUN apk add --no-cache --update \
     && tar xf /tmp/tomcat.tar.gz --strip-components=1 \
     # remove useless stuff
     && rm -fr \
+        ${TOMCAT_HOME}/bin/*.bat \
         ${TOMCAT_HOME}/conf/Catalina/localhost/manager.xml \
         ${TOMCAT_HOME}/webapps/docs \
         ${TOMCAT_HOME}/webapps/examples \
