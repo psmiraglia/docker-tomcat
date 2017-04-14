@@ -16,5 +16,5 @@ echo -e "default: ${VERSIONS[@]}\n" > Makefile
 for TOMCAT_VERSION in ${VERSIONS[@]}; do
     TOMCAT_MAJOR=`echo ${TOMCAT_VERSION} | cut -d. -f1`
     echo "${TOMCAT_VERSION}:" >> Makefile
-    echo -e "\tdocker build --tag psmiraglia/tomcat${TOMCAT_MAJOR}:${TOMCAT_VERSION} ${TOMCAT_MAJOR}/${TOMCAT_VERSION}\n" >> Makefile
+    echo -e "\tdocker build --tag psmiraglia/tomcat:${TOMCAT_VERSION} ${TOMCAT_MAJOR}/${TOMCAT_VERSION}\n" >> Makefile
 done
