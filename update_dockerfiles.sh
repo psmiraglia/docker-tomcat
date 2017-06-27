@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TEMPLATE="Dockerfile.template"
-VERSIONS=( 7.0.77 8.0.43 8.5.13 )
+VERSIONS=( 7.0.77 8.0.43 8.0.44 8.5.13 )
 
 for TOMCAT_VERSION in ${VERSIONS[@]}; do
     TOMCAT_MAJOR=`echo ${TOMCAT_VERSION} | cut -d. -f1`
