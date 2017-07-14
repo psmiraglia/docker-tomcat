@@ -9,6 +9,7 @@ Tomcat versions are:
 *   7.0.77
 *   8.0.43
 *   8.0.44
+*   8.0.45
 *   8.5.13
 
 [7-jre-alpine]: https://github.com/docker-library/openjdk/tree/master/7-jre/alpine
