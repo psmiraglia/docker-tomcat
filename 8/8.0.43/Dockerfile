@@ -19,8 +19,8 @@ RUN apk add --no-cache --update \
     # download and verify Tomcat tarball
     && cd /tmp \
     && curl https://www.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/KEYS 2>/dev/null | gpg --import \
-    && wget http://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz -O tomcat.tar.gz \
-    && curl https://www.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz.asc -o tomcat.tar.gz.asc \
+    && curl https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz -o tomcat.tar.gz \
+    && curl https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz.asc -o tomcat.tar.gz.asc \
     && gpg --verify tomcat.tar.gz.asc tomcat.tar.gz \
     # create tomcat system user/group
     && mkdir -p ${TOMCAT_HOME} \
