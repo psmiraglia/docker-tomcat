@@ -7,7 +7,7 @@ MAINTAINER "Paolo Smiraglia <paolo.smiraglia@gmail.com>"
 USER root
 
 ENV TOMCAT_MAJOR=8 \
-    TOMCAT_VERSION=8.0.43 \
+    TOMCAT_VERSION=8.0.45 \
     TOMCAT_HOME=/opt/tomcat \
     TOMCAT_USER=tomcat \
     TOMCAT_GROUP=tomcat
