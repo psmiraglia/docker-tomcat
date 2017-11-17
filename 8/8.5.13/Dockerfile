@@ -2,7 +2,7 @@
 # Manual changes will be lost at next run.
 
 FROM openjdk:8-jre-alpine
-MAINTAINER "Paolo Smiraglia <paolo.smiraglia@gmail.com>"
+LABEL maintainer="Paolo Smiraglia <paolo.smiraglia@gmail.com>"
 
 USER root
 
